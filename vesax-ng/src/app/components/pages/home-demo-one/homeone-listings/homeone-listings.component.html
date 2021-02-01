@@ -1,0 +1,253 @@
+<!-- Start Listings Area -->
+<section class="listings-area ptb-100 bg-f9f9f9">
+    <div class="container">
+        <div class="section-title" *ngFor="let Title of sectionTitle;">
+            <h2>{{Title.title}}</h2>
+            <p>{{Title.paragraph}}</p>
+        </div>
+
+        <!-- <div class="listings-slides">
+            <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide *ngFor="let Content of databaseListingBox;">
+                    <div class="single-listings-box">
+                        <div class="listings-image">
+                            <div class="listings-image-slides">
+                                <owl-carousel-o [options]="customOptions2">
+                                    <ng-template carouselSlide *ngFor="let Image of Content.mainImg;">
+                                        <div class="single-image img_resize">
+                                            <img [src]="Image.img" alt="image">
+                                            <a routerLink="/{{Content.detailsLink}}" class="link-btn"></a>
+                                        </div>
+                                    </ng-template>
+                                </owl-carousel-o>
+                            </div>
+                            <a routerLink="/{{Content.bookmarkLink}}" class="bookmark-save"><i
+                                    class="flaticon-heart"></i></a>
+                            <a routerLink="/{{Content.categoryLink}}" class="category"><i
+                                    class="flaticon-cooking"></i></a>
+                        </div>
+                        <div class="listings-content">
+                            <div class="author">
+                                <div class="d-flex align-items-center">
+                                    <img [src]="Content.authorImg" alt="image">
+                                    <span>{{Content.authorName}}</span>
+                                </div>
+                            </div>
+                            <ul class="listings-meta">
+                                <li><a routerLink="/{{Content.categoryLink}}"><i
+                                            class="flaticon-furniture-and-household"></i> Restaurant</a></li>
+                                <li><i class="flaticon-pin"></i> {{Content.address}}</li>
+                            </ul>
+                            <h3><a routerLink="/{{Content.detailsLink}}">{{Content.title}}</a></h3>
+                            <span class="status {{Content.extraClass}}"><i class="flaticon-save"></i>
+                                {{Content.category}}</span>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="rating">
+                                    <i class='{{Star.icon}}' *ngFor="let Star of Content.rating;"></i>
+                                    <span class="count">({{Content.ratingCount}})</span>
+                                </div>
+                                <div class="price">
+                                    {{Content.price}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+
+
+        <div class="listings-slides list_slide">
+            <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide *ngFor="let Content of singleListingsBox;">
+                    <div class="single-listings-box">
+                        <div class="listings-image">
+                            <div class="listings-image-slides">
+                                <owl-carousel-o [options]="customOptions2">
+                                    <ng-template carouselSlide *ngFor="let Image of Content.mainImg;">
+                                        <div class="single-image img_resize">
+                                            <img [src]="Image.img" alt="image">
+                                            <a routerLink="/{{Content.detailsLink}}" class="link-btn"></a>
+                                        </div>
+                                    </ng-template>
+                                </owl-carousel-o>
+                            </div>
+                            <a routerLink="/{{Content.bookmarkLink}}" class="bookmark-save"><i
+                                    class="flaticon-heart"></i></a>
+                            <a routerLink="/{{Content.categoryLink}}" class="category"><i
+                                    class="flaticon-cooking"></i></a>
+                        </div>
+                        <div class="listings-content">
+                            <div class="author">
+                                <div class="d-flex align-items-center">
+                                    <img [src]="Content.authorImg" alt="image">
+                                    <span>{{Content.authorName}}</span>
+                                </div>
+                            </div>
+                            <ul class="listings-meta">
+                                <li><a routerLink="/{{Content.categoryLink}}"><i
+                                            class="flaticon-furniture-and-household"></i> Restaurant</a></li>
+                                <li><i class="flaticon-pin"></i> {{Content.location}}</li>
+                            </ul>
+                            <h3><a routerLink="/{{Content.detailsLink}}">{{Content.title}}</a></h3>
+                            <span class="status {{Content.extraClass}}"><i class="flaticon-save"></i>
+                                {{Content.openORclose}}</span>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="rating">
+                                    <i class='{{Star.icon}}' *ngFor="let Star of Content.rating;"></i>
+                                    <span class="count">({{Content.ratingCount}})</span>
+                                </div>
+                                <div class="price">
+                                    {{Content.price}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div> -->
+
+        <!-- HORIZENTAL CARD -->
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="card zoom" style="width: 100%; margin-bottom: 20px;">
+                    <div class="row no-gutters">
+                        <div class="col-sm-5">
+                            <a href="grid-listings-left-sidebar">
+                                <img class="card-img crd_img" src="assets/img/cate_1.jpg" alt="Suresh Dasari Card">
+                            </a>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="card-body">
+                                <h5 class="card-title">Doctor</h5>
+                                <ul class="list_cart">
+                                    <li><a href="grid-listings-left-sidebar">Cardiologists</a></li>
+                                    <li><a href="grid-listings-left-sidebar">Chest Specialists</a></li>
+                                    <li><a href="grid-listings-left-sidebar">Skin Doctors</a></li>
+                                    <li><a href="grid-listings-left-sidebar">Speech Therapists</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="card zoom" style="width: 100%; margin-bottom: 20px;">
+                    <div class="row no-gutters">
+                        <div class="col-sm-5">
+                            <a href="grid-listings-left-sidebar">
+                                <img class="card-img crd_img" src="assets/img/cate_2.jpg" alt="Suresh Dasari Card">
+                            </a>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="card-body">
+                                <h5 class="card-title">School</h5>
+                                <ul class="list_cart">
+                                    <li><a href="grid-listings-left-sidebar">New Digamber</a></li>
+                                    <li><a href="grid-listings-left-sidebar">Shri Agrasen </a></li>
+                                    <li><a href="grid-listings-left-sidebar">Little Diamonds </a></li>
+                                    <li><a href="grid-listings-left-sidebar">Wishwood Cottage</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="card zoom" style="width: 100%; margin-bottom: 20px;">
+                    <div class="row no-gutters">
+                        <div class="col-sm-5">
+                            <a href="grid-listings-left-sidebar">
+                                <img class="card-img crd_img" src="assets/img/cate_3.jpg" alt="Suresh Dasari Card">
+                            </a>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="card-body">
+                                <h5 class="card-title">College</h5>
+                                <ul class="list_cart">
+                                    <li><a href="grid-listings-left-sidebar">Science </a></li>
+                                    <li><a href="grid-listings-left-sidebar">Medical</a></li>
+                                    <li><a href="grid-listings-left-sidebar">pharmacy</a></li>
+                                    <li><a href="grid-listings-left-sidebar">Agriculture </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="card zoom" style="width: 100%; margin-bottom: 20px;">
+                    <div class="row no-gutters">
+                        <div class="col-sm-7">
+                            <div class="card-body">
+                                <h5 class="card-title">Grocery</h5>
+                                <ul class="list_cart">
+                                    <li><a href="grid-listings-left-sidebar">Fruits & Vegetables</a></li>
+                                    <li><a href="grid-listings-left-sidebar">Foodgrains, Oil & Masala</a></li>
+                                    <li><a href="grid-listings-left-sidebar">Cleaning & Household</a></li>
+                                    <li><a href="grid-listings-left-sidebar">Kitchen, Garden & Pets</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <a href="grid-listings-left-sidebar">
+                                <img class="card-img crd_img" src="assets/img/cate_4.jpg" alt="Suresh Dasari Card">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="card zoom" style="width: 100%; margin-bottom: 20px;">
+                    <div class="row no-gutters">
+                        <div class="col-sm-7">
+                            <div class="card-body">
+                                <h5 class="card-title">Restaurant</h5>
+                                <ul class="list_cart">
+                                    <li><a href="grid-listings-left-sidebar">Fast food </a></li>
+                                    <li><a href="grid-listings-left-sidebar">Fast casual</a></li>
+                                    <li><a href="grid-listings-left-sidebar">Brasserie and bistro</a></li>
+                                    <li><a href="grid-listings-left-sidebar">Family style</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <a href="grid-listings-left-sidebar">
+                                <img class="card-img crd_img" src="assets/img/cate_5.jpg" alt="Suresh Dasari Card">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="card zoom" style="width: 100%;margin-bottom: 20px;">
+                    <div class="row no-gutters">
+                        <div class="col-sm-7">
+                            <div class="card-body">
+                                <h5 class="card-title">Hospitals</h5>
+                                <ul class="list_cart">
+                                    <li><a href="grid-listings-left-sidebar">Women's hospitals</a></li>
+                                    <li><a href="grid-listings-left-sidebar">Children's hospitals</a></li>
+                                    <li><a href="grid-listings-left-sidebar">Oncology hospitals</a></li>
+                                    <li><a href="grid-listings-left-sidebar">Psychiatric hospitals</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <a href="grid-listings-left-sidebar">
+                                <img class="card-img crd_img" src="assets/img/cate_6.jpg" alt="Suresh Dasari Card">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- HORIZENTAL CARD close-->
+
+    </div>
+    <!---div close container-->
+
+    <div class="divider2"></div>
+</section>
+<!-- End Listings Area -->

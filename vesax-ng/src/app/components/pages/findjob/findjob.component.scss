@@ -1,0 +1,30 @@
+
+section.find_job.pt-100.pb-70 {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+.tl_blue{
+    color: #035494;
+}
+.crd-job{
+    text-align: center;
+    box-shadow: 0 1px 8px 0 rgb(0 0 0 / 12%), 0 1px 4px 0 rgb(0 0 0 / 6%);
+    padding-top: 15px;
+    margin-top: 30px;
+}
+a.btn-hire {
+    display: inline-block;
+    padding: 10px 0px;
+    background: #005b9e;
+    color: #fff;
+    font-weight: 600;
+}
+
+.zoom_j {
+    transition: transform .2s; /* Animation */
+  }
+  
+.zoom_j:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
